@@ -23,4 +23,6 @@
 .byebug_history
 public/app.js
 public/index.html
+
+#api keys
 .env
