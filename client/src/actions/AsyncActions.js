@@ -2,10 +2,14 @@ import * as actions from './Actions'
 
 export const creds = { credentials: 'same-origin' };
 
-export function fetchMe() {
+export function fetchpeople() {
   return dispatch => {
-    return fetch('/api/me.json', creds).
+    return fetch('/api/people.json', creds).
       then(response => response.json()).
-      then(me => dispatch(actions.receiveMe(me)));
-  }
+      then(people => dispatch(actions.receivePeople(people)))
+      .catch((err) => {
+        console.log('ERROR', err)
+  })
 }
+}
+
