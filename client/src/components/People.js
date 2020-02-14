@@ -1,6 +1,23 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
+
+export const Grid = styled.div`
+margin-top: 20px;
+
+`
+export const Row = styled.div`
+display: flex
+`
+export const Col = styled.div`
+flex: ${(props) => props.size};
+border: solid;
+padding: 20px;
+`
+export const Title = styled.h1`
+font-size: 30px;
+margin-left: 300px;
+`
 class People extends Component {
 
 
@@ -8,24 +25,32 @@ class People extends Component {
     const people = this.props.people.allPeople.map((person, index) => {
 
       return (
-      <div key={index}>
-        <ul>
-          <li>
+     <div>
+        <Row>
+          <Col size={4}>
         Name:{person.display_name}
-        <br></br>
+        </Col >
+        <Col size={5}>
         Email:{person.email_address}
-        <br></br>
+        </Col>
+        <Col size={3}>
         Title:{person.title}
-        </li>
-        </ul>
-      </div>
+       </Col>
+     </Row>
+    </div>
     )
   })
   return (
-    <div>
-      {/* <h1>All People</h1> */}
+    
+     <Grid>
+        <Row>
+         <Col size={6}>
+         <Title>All People</Title>
+         </Col>
+       </Row>
       {people}
-    </div>
+       </Grid>
+    
   )
 }
 }
