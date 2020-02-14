@@ -13,14 +13,15 @@ const Page = styled.div`
 
 const FlexBox = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
 `;
 
 export const LandingPage = () => (
   <Page>
 
     <FlexBox>
+      <Intro />
       <ConnectPeople />
     </FlexBox>
   </Page>
