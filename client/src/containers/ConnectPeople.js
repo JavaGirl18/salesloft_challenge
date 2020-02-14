@@ -1,5 +1,5 @@
+import PeoplePage from '../components/PeoplePage'
 import { connect } from 'react-redux'
-import { PeoplePage } from '../components/PeoplePage'
 
 const mapStateToProps = state => ({ people: state.people });
 
