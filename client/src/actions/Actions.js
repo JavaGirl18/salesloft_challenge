@@ -1,6 +1,6 @@
 import * as actions from './Constants'
 
-export function receivePeople(people) {
+export function getPeople(people) {
   return {
     type: actions.GET_PEOPLE,
     people

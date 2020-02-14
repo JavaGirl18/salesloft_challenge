@@ -6,7 +6,7 @@ export function fetchpeople() {
   return dispatch => {
     return fetch('/api/people.json', creds).
       then(response => response.json()).
-      then(people => dispatch(actions.receivePeople(people)))
+      then(people => dispatch(actions.getPeople(people)))
       .catch((err) => {
         console.log('ERROR', err)
   })

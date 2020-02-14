@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { ConnectedNavBar } from '../containers/ConnectedNavBar'
+import { ConnectPeople } from '../containers/ConnectPeople'
 import { Intro } from './Intro'
 
 const Page = styled.div`
@@ -19,9 +19,9 @@ const FlexBox = styled.div`
 
 export const LandingPage = () => (
   <Page>
-    <ConnectedNavBar />
+
     <FlexBox>
-      <Intro />
+      <ConnectPeople />
     </FlexBox>
   </Page>
 );
