@@ -18,7 +18,7 @@ const Box = styled.div`
   grid-template: 30% 1fr / 1fr;
 `
 
-const InstructionsBox = styled.div`
+const ButtonBox = styled.div`
   margin-left: 30px;
   margin-right: 30px;
 
@@ -26,23 +26,26 @@ const InstructionsBox = styled.div`
     font-size: 20px;
   }
 `
+ const Button = styled.div`
+border-radius: 20px;
+ `
+// const Logo = () => (
+//   <FlexBox>
 
-const Logo = () => (
-  <FlexBox>
-
-  <h1>All People</h1>
-  </FlexBox>
+//   <Button>All People</Button>
+//   </FlexBox>
+// )
+// const CountTable = (props) => (
+// character={props.} 
+// )
+const Click = () => (
+  <ButtonBox>
+    <button>Will enter later</button>
+  </ButtonBox>
 )
 
-const Instructions = () => (
-  <InstructionsBox>
-    <h4>Will enter later</h4>
-  </InstructionsBox>
-)
-
-export const Intro = () => (
+export const ClickMe = () => (
   <Box>
-
-    <Instructions />
+    <Click />
   </Box>
 );

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-
+import { ClickMe } from './ClickMe'
+import { PeopleTable } from './PeopleTable'
 
 export const Grid = styled.div`
 margin-top: 20px;
-
 `
 export const Row = styled.div`
 display: flex
@@ -18,15 +18,12 @@ export const Title = styled.h1`
 font-size: 30px;
 margin-left: 300px;
 `
-class People extends Component {
+export const People =  (props) => {
 
+const people = props.people.allPeople.map(person => {
 
-  render () {
-    const people = this.props.people.allPeople.map((person, index) => {
-
-      return (
-     <div>
-        <Row>
+  return (
+ <Row>
           <Col size={4}>
         Name:{person.display_name}
         </Col >
@@ -37,24 +34,24 @@ class People extends Component {
         Title:{person.title}
        </Col>
      </Row>
-    </div>
-    )
-  })
-  return (
-    
-     <Grid>
-        <Row>
-         <Col size={6}>
-         <Title>All People</Title>
-         </Col>
-       </Row>
-      {people}
-       </Grid>
-    
   )
-}
-}
+})
 
- 
+return (
+  <div>
+    <ClickMe people={props.people.allPeople}/>
+    <Grid>
+    <Row>
+      <Col size={6}>
+    <Title>All People</Title>
+    </Col>
+    </Row>
+  
+ {people}
+  </Grid>
+  
+  </div>
+)
 
+}
 export default People;

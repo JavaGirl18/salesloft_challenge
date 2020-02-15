@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { ConnectPeople } from '../containers/ConnectPeople'
-import { Intro } from './Intro'
+
 
 const Page = styled.div`
   display: grid;
@@ -21,7 +21,6 @@ export const LandingPage = () => (
   <Page>
 
     <FlexBox>
-      <Intro />
       <ConnectPeople />
     </FlexBox>
   </Page>
