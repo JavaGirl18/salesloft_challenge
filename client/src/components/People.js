@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import { ClickMe } from './ClickMe'
-import { PeopleTable } from './PeopleTable'
+
 
 export const Grid = styled.div`
 margin-top: 20px;
@@ -20,7 +20,8 @@ margin-left: 300px;
 `
 export const People =  (props) => {
 
-const people = props.people.allPeople.map(person => {
+const people = props.people.people.map(person => {
+
 
   return (
  <Row>
@@ -39,7 +40,8 @@ const people = props.people.allPeople.map(person => {
 
 return (
   <div>
-    <ClickMe people={props.people.allPeople}/>
+
+  <ClickMe count={props.count}/>
     <Grid>
     <Row>
       <Col size={6}>
@@ -49,9 +51,9 @@ return (
   
  {people}
   </Grid>
-  
   </div>
 )
 
 }
+
 export default People;

@@ -1,11 +1,10 @@
-
+// import { merge } from '../utils'
 import { GET_PEOPLE } from '../actions/Constants'
 import { routerActions } from 'react-router-redux';
 
 
 const defaultState={
-  allPeople:[],
-  person: {}
+  people:[]
 }
 
 
@@ -15,7 +14,7 @@ export default function(state = defaultState, action) {
     case GET_PEOPLE:
       return {
         state, 
-        allPeople: action.people.data
+        people: action.people.data
       }
     default:
       return state
