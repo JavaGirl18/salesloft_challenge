@@ -1,5 +1,5 @@
 // import { merge } from '../utils'
-import { GET_PEOPLE, COUNT } from '../actions/Constants'
+import { GET_PEOPLE } from '../actions/Constants'
 import { routerActions } from 'react-router-redux';
 
 
@@ -16,7 +16,7 @@ export default function(state = defaultState, action) {
         state, 
         people: action.people
       }
-     
+    
     default:
       return state
   }

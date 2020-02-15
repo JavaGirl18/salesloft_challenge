@@ -14,12 +14,24 @@ flex: ${(props) => props.size};
 border: solid;
 padding: 20px;
 `
-const Table = styled.div`
-display: none;
-`
-export const PeopleTable = (props) => (
+// const Table = styled.div`
+// margin-left: 40%;
+// `
+export const PeopleTable = (props) => {
+  const character =  props.results.map(letter =>{
+const l = letter.split('')
+ 
+  return(
   <div>
-  <Grid>
+
+  <p>{l.join().length}</p>
+  <br></br>
+     </div>
+  )
+})
+  return(
+    <div>
+     <Grid>
     <h1>Let's Count!</h1>
     <Row>
       <Col size={2}>
@@ -31,9 +43,12 @@ Count
 </Col>
  </Row>
 <Row>
-  {props.people}
+  <Col size={1}>
+ {character}
+ </Col>
 </Row>
      </Grid>
-     </div>
-)
+    </div>
+  )
+}
 export default PeopleTable

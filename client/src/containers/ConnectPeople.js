@@ -5,9 +5,9 @@ import { count } from '../actions/AsyncActions'
 
 const mapStateToProps = state => ({ people: state.people });
 
-// const mapDispatchToProps = {
-//  count: count
-//  }
+const mapDispatchToProps = {
+ count: fetchPeople
+ }
 export const  ConnectPeople = connect(
   mapStateToProps,
   mapDispatchToProps

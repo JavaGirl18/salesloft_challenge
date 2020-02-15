@@ -43,7 +43,7 @@ export const ClickMe = (props) => {
  const characters= [];
     const results = props.people.people.map(person =>{
       return (
-    person.email_address[0]
+    person.email_address
       )
     })
 const Click = () => (
