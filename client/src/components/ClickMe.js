@@ -40,19 +40,29 @@ border-radius: 20px;
 // )
 
 export const ClickMe = (props) => {
-   
-    
-    const Click = () => (
-      <ButtonBox>
-        <button onClick={() => count() }>Count!</button>
+ const characters= [];
+    const results = props.people.people.map(person =>{
+      return (
+    person.email_address[0]
+      )
+    })
+const Click = () => (
+  <ButtonBox>
+        <button onClick={()=>count()}>Count!</button>
           </ButtonBox>
      
-    )
+     )
     return(
       <Box>
-      <PeopleTable />
+      <PeopleTable results={results}/>
+
       <Click />
       </Box>
     )
   
-    };
+    }
+    
+    // App.propTypes = {
+    //   count: PropTypes.func.isRequired
+    // };
+    // ;

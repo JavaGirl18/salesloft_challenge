@@ -41,7 +41,8 @@ const people = props.people.people.map(person => {
 return (
   <div>
 
-  <ClickMe count={props.count}/>
+  <ClickMe 
+            people={props.people}/>
     <Grid>
     <Row>
       <Col size={6}>

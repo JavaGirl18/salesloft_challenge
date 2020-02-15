@@ -30,7 +30,9 @@ Character
 Count
 </Col>
  </Row>
-
+<Row>
+  {props.people}
+</Row>
      </Grid>
      </div>
 )
