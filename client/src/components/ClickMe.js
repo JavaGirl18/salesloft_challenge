@@ -10,12 +10,9 @@ const FlexBox = styled.div`
 `
 
 const Box = styled.div`
-  display: grid;
-  box-shadow: 0 0 6px 0 rgba(58,58,58,0.24);
-  width: 400px;
   height: 300px;
-  border-top: 6px solid #4a90e2;
-  grid-template: 30% 1fr / 1fr;
+  width 300px;
+  margin-left: 900px;
 `
 
 const ButtonBox = styled.div`
@@ -46,18 +43,18 @@ export const ClickMe = (props) => {
     person.email_address
       )
     })
-const Click = () => (
-  <ButtonBox>
-        <button onClick={()=>count()}>Count!</button>
-          </ButtonBox>
+// const Click = () => (
+//   <ButtonBox>
+//         <button onClick={()=>count()}>Count!</button>
+//           </ButtonBox>
      
-     )
+//      )
     return(
-      <Box>
-      <PeopleTable results={results}/>
+      <div>
 
-      <Click />
-      </Box>
+      <PeopleTable results={results}/>
+      {/* <Click /> */}
+      </div>
     )
   
     }

@@ -11,17 +11,16 @@ const Page = styled.div`
   width: 100%;
 `;
 
-const FlexBox = styled.div`
-  display: flex;
-  align-items: left;
-  justify-content: left;
+const Box = styled.div`
+  width: 1000px;
+  margin-left: 100px;
 `;
 
 export const LandingPage = () => (
-  <Page>
 
-    <FlexBox>
+
+    <Box>
       <ConnectPeople />
-    </FlexBox>
-  </Page>
+    </Box>
+
 );
