@@ -1,7 +1,7 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
-import { ConnectPeople } from '../containers/ConnectPeople'
+import { ConnectPeople } from "../containers/ConnectPeople";
 
 const Box = styled.div`
   width: 1000px;
@@ -9,10 +9,7 @@ const Box = styled.div`
 `;
 
 export const LandingPage = () => (
-
-
-    <Box>
-      <ConnectPeople />
-    </Box>
-
+  <Box>
+    <ConnectPeople />
+  </Box>
 );
