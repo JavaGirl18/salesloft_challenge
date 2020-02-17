@@ -3,17 +3,6 @@ import styled from 'styled-components'
 import { ClickMe } from './ClickMe'
 
 
-// export const Grid = styled.div`
-// margin-top: 20px;
-// `
-// export const Row = styled.div`
-// display: flex
-// `
-// export const Col = styled.div`
-// flex: ${(props) => props.size};
-// border: solid;
-// padding: 20px;
-// `
 export const Title = styled.h1`
 font-size: 30px;
 margin-left: 300px;
@@ -44,11 +33,10 @@ display: flex;
 
 export const People =  (props) => {
 
-const people = props.people.people.map(person => {
-
+const people = props.people.people.map((person, index) => {
 
   return (
- <Container>
+ <Container key={index}>
    
         <Span>
         {person.display_name}
@@ -75,17 +63,9 @@ return (
    </Container>
   {people}
 
-
-
   <ClickMe 
             people={props.people} />
-
   </div>
-  
-  
- 
- 
-  
 )
 
 }
