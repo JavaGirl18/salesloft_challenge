@@ -1,5 +1,8 @@
 # Welcome!
 
+**Getting Started**
+In order to run this app, please follow the instructions provided by SalesLoft here <https://github.com/SalesLoft/DevelopmentInterviewStarterKit>. You will also need to include your unique Salesloft Authentication Token inside of your `.env` for the API functionality.
+
 
 **App Features**
 Let start by saying that this app includes only Step 1 and Step 2 of the challenge. Both steps are fully functional! In summary, this app can
